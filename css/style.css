@@ -673,16 +673,16 @@ p { margin: 0 0 var(--r-md); max-width: 65ch; }
 }
 .faq-q .plus::before { width: 12px; height: 1.5px; transform: translate(-50%, -50%); }
 .faq-q .plus::after { width: 1.5px; height: 12px; transform: translate(-50%, -50%); }
-.faq-item[aria-expanded="true"] .faq-q .plus { background: var(--c-ink); }
-.faq-item[aria-expanded="true"] .faq-q .plus::before { background: var(--c-paper); }
-.faq-item[aria-expanded="true"] .faq-q .plus::after { transform: translate(-50%, -50%) rotate(90deg); background: var(--c-paper); }
+.faq-q[aria-expanded="true"] .plus { background: var(--c-ink); }
+.faq-q[aria-expanded="true"] .plus::before { background: var(--c-paper); }
+.faq-q[aria-expanded="true"] .plus::after { transform: translate(-50%, -50%) rotate(90deg); background: var(--c-paper); }
 
 .faq-a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s var(--curve-1);
 }
-.faq-item[aria-expanded="true"] .faq-a { max-height: 500px; }
+.faq-item:has(.faq-q[aria-expanded="true"]) .faq-a { max-height: 1000px; }
 .faq-a-inner {
   padding: 1rem 0 0;
   color: var(--c-ink-soft);

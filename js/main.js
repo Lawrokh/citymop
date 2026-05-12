@@ -35,12 +35,13 @@
   document.querySelectorAll('.faq-item').forEach(item => {
     const q = item.querySelector('.faq-q');
     if (!q) return;
-    q.setAttribute('aria-controls', q.nextElementSibling.id || '');
+    if (q.nextElementSibling && q.nextElementSibling.id) {
+      q.setAttribute('aria-controls', q.nextElementSibling.id);
+    }
+    if (!q.hasAttribute('aria-expanded')) q.setAttribute('aria-expanded', 'false');
     q.addEventListener('click', () => {
-      const open = item.getAttribute('aria-expanded') === 'true';
-      // close others optionally; here keep multiple open
-      item.setAttribute('aria-expanded', !open);
-      q.setAttribute('aria-expanded', !open);
+      const open = q.getAttribute('aria-expanded') === 'true';
+      q.setAttribute('aria-expanded', String(!open));
     });
   });
 
