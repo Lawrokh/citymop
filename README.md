@@ -148,9 +148,9 @@ oraz w stałej `SYSTEM_PROMPT_TEMPLATE` w `scripts/build_blog.py`.
 
 Zmienne CSS na początku `css/style.css` (sekcja `:root`):
 ```css
---c-zdroj: #0e6b66;     /* kolor główny (turkus) */
---c-zest:  #f0c63a;     /* akcent (cytrynowy) */
---c-paper: #f6f4ee;     /* tło (papier) */
+--c-zdroj: #14498f;     /* kolor główny (deep brand blue z loga) */
+--c-zest:  #117cc4;     /* akcent (sky blue z fali w logo) */
+--c-paper: #f5f8fc;     /* tło (cool paper) */
 ```
 
 ### Wyłącz codzienną generację
@@ -219,8 +219,8 @@ Wszystkie generowane przez AI posty:
 
 ## 📞 Kontakt CityMop
 
-- **Telefon:** +48 537 480 480
-- **E-mail:** kontakt@citymop.pl
+- **Telefon:** +48 530 610 336
+- **E-mail:** info@citymop.pl
 - **Facebook:** [@sprzataniebusko](https://www.facebook.com/sprzataniebusko/)
 - **Adres:** Busko-Zdrój 28-100, woj. świętokrzyskie
 

@@ -111,7 +111,7 @@
         `Wiadomość:
 ${data.get('message') || '—'}`
       );
-      window.location.href = `mailto:kontakt@citymop.pl?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:info@citymop.pl?subject=${subject}&body=${body}`;
     });
   }
 

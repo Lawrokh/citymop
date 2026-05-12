@@ -231,7 +231,7 @@ USŁUGI CityMop (Central Entity = CityMop, jako Agent w stronie czynnej):
   - pranie dywanów i wykładzin
 Obszar: Busko-Zdrój i 30 km od centrum (Solec-Zdrój, Stopnica, Nowy Korczyn,
 Wiślica, Pińczów, Chmielnik, Kazimierza Wielka, Pacanów).
-Kontakt: +48 537 480 480, kontakt@citymop.pl
+Kontakt: +48 530 610 336, info@citymop.pl
 
 OBOWIĄZUJĄCE ZASADY SEO/GEO/LLM (z encyklopedii semantycznego SEO):
 
@@ -414,7 +414,7 @@ def render_post_html(data: dict, slug: str) -> str:
                 "publisher": {
                     "@type": "Organization",
                     "name": "CityMop",
-                    "logo": {"@type": "ImageObject", "url": f"{DOMAIN}/assets/logo.svg"}
+                    "logo": {"@type": "ImageObject", "url": f"{DOMAIN}/assets/logo.png"}
                 },
                 "mainEntityOfPage": url,
                 "inLanguage": "pl-PL",
@@ -466,8 +466,7 @@ def render_post_html(data: dict, slug: str) -> str:
 <header class="nav" role="banner">
   <div class="container nav-inner">
     <a href="/" class="brand">
-      <span class="brand-mark">C</span>
-      <span>CityMop</span>
+      <img src="/assets/logo.png" alt="CityMop" class="brand-logo" width="180" height="56">
     </a>
     <nav aria-label="Główna nawigacja">
       <ul class="nav-links">
@@ -530,7 +529,7 @@ def render_post_html(data: dict, slug: str) -> str:
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="brand"><span class="brand-mark">C</span><span>CityMop</span></div>
+        <div class="brand"><img src="/assets/logo.png" alt="CityMop" class="brand-logo" width="180" height="56"></div>
         <p class="footer-tagline">Firma sprzątająca z Buska-Zdroju.</p>
       </div>
       <div>
@@ -554,8 +553,8 @@ def render_post_html(data: dict, slug: str) -> str:
       <div>
         <h4>Kontakt</h4>
         <ul>
-          <li><a href="tel:+48537480480">+48 537 480 480</a></li>
-          <li><a href="mailto:kontakt@citymop.pl">kontakt@citymop.pl</a></li>
+          <li><a href="tel:+48537480480">+48 530 610 336</a></li>
+          <li><a href="mailto:info@citymop.pl">info@citymop.pl</a></li>
         </ul>
       </div>
     </div>
