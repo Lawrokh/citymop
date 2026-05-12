@@ -5,12 +5,12 @@
    ========================================================= */
 
 :root {
-  /* Core palette — cool, fresh, brand-aligned */
+  /* Core palette — cool, fresh, brand-aligned (AA contrast over paper) */
   --c-paper: #f5f8fc;
   --c-paper-warm: #eaf0f8;
   --c-ink: #0c1a2e;
-  --c-ink-soft: #2a3d5a;
-  --c-mist: #94a3b8;
+  --c-ink-soft: #243652;   /* 7.6:1 over paper (AAA) */
+  --c-mist: #5b6b82;       /* 5.4:1 over paper (AA) */
 
   /* Brand — CityMop signature blues (from logo) */
   --c-zdroj: #14498f;       /* deep brand blue — "City" */
@@ -70,6 +70,22 @@ button { font-family: inherit; cursor: pointer; border: none; }
 a[href^="tel:"] { white-space: nowrap; }
 /* Email links — wrap on hyphen/at if needed but stay readable */
 a[href^="mailto:"] { word-break: break-word; overflow-wrap: anywhere; }
+
+/* Skip to main content — visually hidden until focused */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 1000;
+  background: var(--c-ink);
+  color: var(--c-paper);
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 1rem; outline: 2px solid var(--c-zest); outline-offset: 2px; }
 
 /* =========================================================
    Typography
@@ -335,12 +351,20 @@ p { margin: 0 0 var(--r-md); max-width: 65ch; }
   width: 8px; height: 8px;
   background: #1aa55c;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(26, 165, 92, 0.2);
+  position: relative;
+}
+.hero-card.badge .dot::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(26, 165, 92, 0.2);
   animation: pulse 2s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(26, 165, 92, 0.2); }
-  50% { box-shadow: 0 0 0 8px rgba(26, 165, 92, 0.05); }
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(2); opacity: 0; }
 }
 
 .hero-card.main .water-bubbles {

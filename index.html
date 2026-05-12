@@ -45,12 +45,19 @@
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/favicon.png">
 <meta name="theme-color" content="#14498f">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-<!-- Preconnect for fonts -->
+<!-- Preload key assets (LCP optimization) -->
+<link rel="preload" as="image" href="/assets/logo.png" fetchpriority="high">
+
+<!-- Async fonts — non-blocking via preload + onload swap -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,30..100,0..1;1,9..144,300..700,30..100,0..1&family=Manrope:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,30..100,0..1;1,9..144,300..700,30..100,0..1&family=Manrope:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,30..100,0..1;1,9..144,300..700,30..100,0..1&family=Manrope:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap">
+</noscript>
 
 <link rel="stylesheet" href="/css/style.css">
 <link rel="alternate" type="application/rss+xml" title="CityMop Blog — sprzątanie i porządek" href="/blog/feed.xml">
@@ -242,6 +249,8 @@
 <!-- ============================================================
      NAV
      ============================================================ -->
+<a class="skip-link" href="#main">Przejdź do treści</a>
+
 <header class="nav" role="banner">
   <div class="container nav-inner">
     <a href="/" class="brand" aria-label="CityMop — strona główna">
@@ -262,6 +271,8 @@
     </button>
   </div>
 </header>
+
+<main id="main">
 
 <!-- ============================================================
      HERO — BLUF compliant: Central Entity (CityMop) as Agent
@@ -488,22 +499,22 @@
     <ol class="process-steps reveal">
       <li class="step">
         <div class="step-num">01</div>
-        <h4>Zgłoszenie</h4>
+        <h3>Zgłoszenie</h3>
         <p>Dzwonisz lub piszesz. Opisujesz, co ma być posprzątane.</p>
       </li>
       <li class="step">
         <div class="step-num">02</div>
-        <h4>Wycena 24h</h4>
+        <h3>Wycena 24h</h3>
         <p>W ciągu doby otrzymujesz darmową, niezobowiązującą wycenę.</p>
       </li>
       <li class="step">
         <div class="step-num">03</div>
-        <h4>Sprzątanie</h4>
+        <h3>Sprzątanie</h3>
         <p>Przyjeżdżamy w ustalonym terminie z własnym sprzętem i środkami.</p>
       </li>
       <li class="step">
         <div class="step-num">04</div>
-        <h4>Gwarancja</h4>
+        <h3>Gwarancja</h3>
         <p>Jeśli coś jest nie tak — wracamy w 48 h i poprawiamy. Bezpłatnie.</p>
       </li>
     </ol>
@@ -842,6 +853,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- ============================================================
      FOOTER
      ============================================================ -->
@@ -859,7 +872,7 @@
       </div>
 
       <div>
-        <h4>Usługi</h4>
+        <h3>Usługi</h3>
         <ul>
           <li><a href="#uslugi">Sprzątanie domów</a></li>
           <li><a href="#uslugi">Sprzątanie biur</a></li>
@@ -870,7 +883,7 @@
       </div>
 
       <div>
-        <h4>Firma</h4>
+        <h3>Firma</h3>
         <ul>
           <li><a href="#proces">Jak pracujemy</a></li>
           <li><a href="#obszar">Obszar działania</a></li>
@@ -881,7 +894,7 @@
       </div>
 
       <div>
-        <h4>Kontakt</h4>
+        <h3>Kontakt</h3>
         <ul>
           <li><a href="tel:+48530610336">+48 530 610 336</a></li>
           <li><a href="mailto:info@citymop.pl">info@citymop.pl</a></li>
