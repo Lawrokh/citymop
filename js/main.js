@@ -90,28 +90,107 @@
     });
   });
 
-  // ---- Contact form (front-end mailto fallback; replace with API) ----
+  // ---- Contact form → Zapier Webhook ----
   const form = document.getElementById('contact-form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    const submitBtn = form.querySelector('#contact-submit');
+    const statusEl = form.querySelector('#form-status');
+    const loadedAt = Date.now();
+
+    const setStatus = (msg, kind) => {
+      statusEl.textContent = msg;
+      statusEl.dataset.kind = kind || '';
+    };
+
+    const showFieldError = (field, show) => {
+      const wrap = field.closest('.field');
+      if (!wrap) return;
+      wrap.classList.toggle('has-error', !!show);
+    };
+
+    const validatePhone = (val) => {
+      if (!val) return false;
+      const digits = val.replace(/\D/g, '');
+      return digits.length >= 9 && digits.length <= 15;
+    };
+
+    const validateEmail = (val) => {
+      if (!val) return true; // optional
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    };
+
+    form.querySelectorAll('input, select, textarea').forEach((el) => {
+      el.addEventListener('input', () => showFieldError(el, false));
+      el.addEventListener('change', () => showFieldError(el, false));
+    });
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      setStatus('', '');
+
       const data = new FormData(form);
-      const subject = encodeURIComponent('Zapytanie ze strony CityMop — ' + (data.get('service') || ''));
-      const body = encodeURIComponent(
-        `Imię: ${data.get('name')}
-` +
-        `Telefon: ${data.get('phone')}
-` +
-        `E-mail: ${data.get('email')}
-` +
-        `Usługa: ${data.get('service')}
-` +
-        `Adres: ${data.get('address') || '—'}
-` +
-        `Wiadomość:
-${data.get('message') || '—'}`
-      );
-      window.location.href = `mailto:info@citymop.pl?subject=${subject}&body=${body}`;
+
+      if (data.get('_gotcha')) return; // bot trap
+      if (Date.now() - loadedAt < 1500) return; // too fast = bot
+
+      let ok = true;
+      const name = (data.get('name') || '').toString().trim();
+      const phone = (data.get('phone') || '').toString().trim();
+      const email = (data.get('email') || '').toString().trim();
+      const service = (data.get('service') || '').toString().trim();
+      const consent = form.querySelector('input[name="consent"]').checked;
+
+      if (name.length < 2) { showFieldError(form.querySelector('#f-name'), true); ok = false; }
+      if (!validatePhone(phone)) { showFieldError(form.querySelector('#f-phone'), true); ok = false; }
+      if (!validateEmail(email)) { showFieldError(form.querySelector('#f-email'), true); ok = false; }
+      if (!service) { showFieldError(form.querySelector('#f-service'), true); ok = false; }
+      if (!consent) { showFieldError(form.querySelector('input[name="consent"]'), true); ok = false; }
+
+      if (!ok) {
+        setStatus('Uzupełnij wymagane pola (imię, telefon, usługa, zgoda).', 'error');
+        const firstErr = form.querySelector('.field.has-error input, .field.has-error select');
+        if (firstErr) firstErr.focus();
+        return;
+      }
+
+      const webhook = form.dataset.webhook;
+      if (!webhook || webhook.includes('REPLACE_ME')) {
+        setStatus('Formularz nie jest jeszcze podpięty. Zadzwoń: +48 530 610 336.', 'error');
+        return;
+      }
+
+      const payload = {
+        name,
+        phone,
+        email,
+        service,
+        address: (data.get('address') || '').toString().trim(),
+        message: (data.get('message') || '').toString().trim(),
+        consent: 'yes',
+        submitted_at: new Date().toISOString(),
+        page_url: window.location.href,
+        user_agent: navigator.userAgent
+      };
+
+      submitBtn.classList.add('is-loading');
+      submitBtn.disabled = true;
+      setStatus('Wysyłam zapytanie…', 'loading');
+
+      try {
+        await fetch(webhook, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        setStatus('Dziękujemy! Twoje zapytanie zostało wysłane — oddzwonimy w ciągu 1 dnia roboczego.', 'success');
+        form.reset();
+      } catch (err) {
+        setStatus('Coś poszło nie tak. Zadzwoń bezpośrednio: +48 530 610 336.', 'error');
+      } finally {
+        submitBtn.classList.remove('is-loading');
+        submitBtn.disabled = false;
+      }
     });
   }
 

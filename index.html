@@ -770,26 +770,35 @@
       </div>
     </div>
 
-    <form class="contact-form reveal" id="contact-form" novalidate>
+    <form class="contact-form reveal" id="contact-form" novalidate
+          data-webhook="https://hooks.zapier.com/hooks/catch/25538694/4ywrpwp/">
       <h3>Zamów bezpłatną wycenę</h3>
 
       <div class="field">
-        <label for="f-name">Imię i nazwisko</label>
-        <input id="f-name" name="name" type="text" required autocomplete="name">
+        <label for="f-name">Imię i nazwisko <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-name" name="name" type="text" required autocomplete="name" minlength="2">
+        <span class="field-error" data-for="name">Podaj imię i nazwisko</span>
       </div>
 
       <div class="field">
-        <label for="f-phone">Telefon</label>
-        <input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="np. 530 610 336">
+        <label for="f-phone">Telefon <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-phone" name="phone" type="tel" required autocomplete="tel"
+               placeholder="np. 530 610 336"
+               pattern="^[+\d][\d\s\-]{7,18}$"
+               inputmode="tel"
+               aria-describedby="phone-help">
+        <small id="phone-help" class="field-help">Numer telefonu jest wymagany — oddzwonimy w ciągu 1 dnia roboczego.</small>
+        <span class="field-error" data-for="phone">Podaj poprawny numer telefonu (np. 530 610 336)</span>
       </div>
 
       <div class="field">
         <label for="f-email">E-mail</label>
         <input id="f-email" name="email" type="email" autocomplete="email">
+        <span class="field-error" data-for="email">Podaj poprawny adres e-mail</span>
       </div>
 
       <div class="field">
-        <label for="f-service">Co mamy posprzątać?</label>
+        <label for="f-service">Co mamy posprzątać? <span class="req" aria-hidden="true">*</span></label>
         <select id="f-service" name="service" required>
           <option value="">Wybierz usługę…</option>
           <option>Sprzątanie domu / mieszkania</option>
@@ -799,6 +808,7 @@
           <option>Pranie dywanów / wykładzin</option>
           <option>Inne — opiszę w wiadomości</option>
         </select>
+        <span class="field-error" data-for="service">Wybierz usługę</span>
       </div>
 
       <div class="field">
@@ -811,7 +821,23 @@
         <textarea id="f-message" name="message" placeholder="Metraż, terminy, szczegóły…"></textarea>
       </div>
 
-      <button type="submit">Wyślij zapytanie →</button>
+      <div class="field field-consent">
+        <label class="consent-label">
+          <input type="checkbox" name="consent" required>
+          <span>Wyrażam zgodę na kontakt telefoniczny w sprawie zapytania. Twoje dane przetwarzamy wyłącznie w celu odpowiedzi na zapytanie.</span>
+        </label>
+        <span class="field-error" data-for="consent">Wymagana zgoda na kontakt</span>
+      </div>
+
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"
+             style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+
+      <button type="submit" id="contact-submit">
+        <span class="btn-label">Wyślij zapytanie →</span>
+        <span class="btn-loader" aria-hidden="true"></span>
+      </button>
+
+      <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
     </form>
   </div>
 </section>
