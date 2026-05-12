@@ -768,6 +768,56 @@ def generate_rss(posts: list[dict]):
 
 
 # =====================================================================
+# INDEXNOW — powiadamia Bing/Yandex/Naver o nowych URL-ach
+# (Google nie wspiera tego standardu)
+# =====================================================================
+
+def notify_indexnow(urls: list[str]) -> None:
+    """
+    Wysyła POST do api.indexnow.org z listą URL-i do indeksacji.
+    Wymaga zmiennej środowiskowej INDEXNOW_KEY (UUID) oraz pliku
+    {KEY}.txt w katalogu głównym strony (do weryfikacji własności).
+
+    W przypadku braku klucza lub błędu — silent skip (IndexNow jest
+    "best effort", nie powinien blokować pipeline'u generacji posta).
+    """
+    import urllib.request
+    import urllib.error
+
+    key = os.environ.get("INDEXNOW_KEY", "").strip()
+    if not key:
+        print("[INFO] IndexNow: brak INDEXNOW_KEY — pomijam.")
+        return
+
+    host = DOMAIN.replace("https://", "").replace("http://", "").rstrip("/")
+    payload = json.dumps({
+        "host": host,
+        "key": key,
+        "keyLocation": f"{DOMAIN}/{key}.txt",
+        "urlList": urls,
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.indexnow.org/indexnow",
+        data=payload,
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            print(f"[OK] IndexNow ping: HTTP {resp.status} dla {len(urls)} URL(s)")
+    except urllib.error.HTTPError as e:
+        # 200 = OK, 202 = przyjęte, 400 = bad request (np. zbyt wiele URL),
+        # 403 = klucz nie odpowiada plikowi, 422 = URL spoza tej domeny,
+        # 429 = za dużo żądań
+        body = e.read().decode("utf-8", errors="replace")[:200]
+        print(f"[WARN] IndexNow HTTP {e.code}: {body}", file=sys.stderr)
+    except Exception as e:
+        print(f"[WARN] IndexNow nieudane (nie blokuje pipeline'u): {e}", file=sys.stderr)
+
+
+# =====================================================================
 # MAIN
 # =====================================================================
 
@@ -813,9 +863,18 @@ def main():
     generate_sitemap(posts)
     generate_rss(posts)
 
+    # 6. Powiadom IndexNow (Bing, Yandex itd.) o nowym poście
+    #    + odswiezonej liscie bloga i sitemap
+    post_url = f"{DOMAIN}/blog/{slug}/"
+    notify_indexnow([
+        post_url,
+        f"{DOMAIN}/blog/",
+        f"{DOMAIN}/sitemap.xml",
+    ])
+
     print("=" * 60)
     print(f"[DONE] Opublikowano: {data['title']}")
-    print(f"[URL]  {DOMAIN}/blog/{slug}/")
+    print(f"[URL]  {post_url}")
     print("=" * 60)
 
 

@@ -37,6 +37,7 @@ jobs:
       - name: Generate today's post
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: python scripts/build_blog.py
 
       - name: Commit and push changes
