@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog CityMop — sprzątanie, pranie, porządek</title>
+    <link>https://citymop.pl/blog/</link>
+    <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju. Pranie tapicerek, sprzątanie po remoncie, czystość w domu i biurze.</description>
+    <language>pl-pl</language>
+    <lastBuildDate>Tue, 12 May 2026 08:00:00 +0200</lastBuildDate>
+    <item>
+      <title>Jak wyprać kanapę w domu i nie zostawić zacieków</title>
+      <link>https://citymop.pl/blog/jak-prac-kanape-w-domu/</link>
+      <guid>https://citymop.pl/blog/jak-prac-kanape-w-domu/</guid>
+      <description>Pranie kanapy w domu jest możliwe, ale wymaga trzech rzeczy, których większość poradników nie mówi. Kompletna instrukcja krok po kroku.</description>
+      <category>Pranie tapicerek</category>
+      <pubDate>Tue, 12 May 2026 08:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Sprzątanie po remoncie — od czego zacząć, żeby skończyć</title>
+      <link>https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/</link>
+      <guid>https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/</guid>
+      <description>Pył budowlany osiada przez 14 dni. Dlatego pierwsze sprzątanie po remoncie nigdy nie jest ostatnim. Wyjaśniamy kolejność czynności.</description>
+      <category>Po remoncie</category>
+      <pubDate>Mon, 11 May 2026 08:00:00 +0200</pubDate>
+    </item>
+    <item>
+      <title>Ile kosztuje sprzątanie mieszkania w Busku-Zdroju w 2026</title>
+      <link>https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/</link>
+      <guid>https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/</guid>
+      <description>Ceny zależą od pięciu czynników, nie od jednego. Realne stawki rynkowe i porównanie ofert.</description>
+      <category>Cennik</category>
+      <pubDate>Sun, 10 May 2026 08:00:00 +0200</pubDate>
+    </item>
+  </channel>
+</rss>
