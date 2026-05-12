@@ -253,68 +253,139 @@ KRYTYCZNE WYTYCZNE PISARSKIE (NIE NEGOCJOWALNE):
    liczb, lokalizacji. NIGDY "różne metody", "wiele osób".
 7. Polski język, zero anglicyzmów, zero buzzwords.
 
-ZWRÓĆ DOKŁADNIE JSON (bez backticków, bez komentarzy):
-{{
-  "title": "Tytuł — max 70 znaków, z słowem kluczowym",
-  "meta_description": "Opis 145-160 znaków, BLUF, słowo kluczowe na początku",
-  "category": "Pranie tapicerek | Sprzątanie domów | itp.",
-  "reading_time_min": 4,
-  "bluf_box": "Akapit BLUF: 40-55 słów, konkrety, liczby, CityMop jako agent",
-  "lead": "Lead artykułu pod H1, 2-3 zdania, max 40 słów",
-  "intro_paragraphs": [
-     "Pierwszy paragraf po lead",
-     "Drugi paragraf po lead"
-  ],
-  "sections": [
-    {{
-      "h2": "Nazwa sekcji (czasownik akcji jeśli HowTo)",
-      "paragraphs": ["pełne autonomiczne akapity, 80-120 słów każdy"],
-      "list": ["opcjonalna lista pozycji – max 6"]
-    }}
-  ],
-  "faq": [
-    {{"q": "Pytanie krótkie", "a": "Odpowiedź 40-70 słów z konkretami"}}
-  ],
-  "howto_steps": [
-    {{"name": "Krok 1: nazwa", "text": "Co dokładnie zrobić"}}
-  ],
-  "keywords": ["słowo kluczowe 1", "słowo kluczowe 2", "..."]
-}}
-
 Liczba sections: 4-7. Liczba FAQ: 3-5. HowTo: 4-6 kroków (lub pusta tablica,
 jeśli temat nie jest instruktażowy).
+
+Wynik MUSISZ zwrócić wywołując narzędzie `save_blog_post` z polami wg schemy.
 """
 
 
+# Schemat narzędzia (tool use) — gwarantuje poprawny, walidowany JSON.
+SAVE_POST_TOOL = {
+    "name": "save_blog_post",
+    "description": (
+        "Zapisuje strukturę gotowego artykułu blogowego CityMop. "
+        "Wszystkie pola są obowiązkowe poza howto_steps i list w sekcjach."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "title": {"type": "string", "description": "Tytuł, max 70 znaków, ze słowem kluczowym."},
+            "meta_description": {"type": "string", "description": "Opis 145–160 znaków, BLUF na początku."},
+            "category": {"type": "string", "description": "np. 'Pranie tapicerek', 'Sprzątanie domów'"},
+            "reading_time_min": {"type": "integer", "minimum": 2, "maximum": 15},
+            "bluf_box": {"type": "string", "description": "Akapit BLUF: 40–55 słów, konkrety, liczby, CityMop jako agent."},
+            "lead": {"type": "string", "description": "Lead pod H1, 2–3 zdania, max 40 słów."},
+            "intro_paragraphs": {
+                "type": "array",
+                "items": {"type": "string"},
+                "minItems": 1,
+                "maxItems": 3,
+            },
+            "sections": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 7,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "h2": {"type": "string"},
+                        "paragraphs": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "minItems": 1,
+                        },
+                        "list": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "maxItems": 6,
+                        },
+                    },
+                    "required": ["h2", "paragraphs"],
+                },
+            },
+            "faq": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 5,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "q": {"type": "string"},
+                        "a": {"type": "string"},
+                    },
+                    "required": ["q", "a"],
+                },
+            },
+            "howto_steps": {
+                "type": "array",
+                "maxItems": 8,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {"type": "string"},
+                        "text": {"type": "string"},
+                    },
+                    "required": ["name", "text"],
+                },
+            },
+            "keywords": {
+                "type": "array",
+                "items": {"type": "string"},
+                "minItems": 3,
+                "maxItems": 10,
+            },
+        },
+        "required": [
+            "title", "meta_description", "category", "bluf_box",
+            "lead", "intro_paragraphs", "sections", "faq", "keywords",
+        ],
+    },
+}
+
+
 def generate_post_via_claude(topic: str, rag_context: str) -> dict:
-    """Wywołuje Claude API i zwraca sparsowany JSON wpisu."""
+    """
+    Wywołuje Claude API z wymuszonym tool use — gwarantuje poprawnie
+    sformatowany JSON zgodny ze schemą (bez ryzyka błędów parsowania).
+    """
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         raise RuntimeError("Brak zmiennej środowiskowej ANTHROPIC_API_KEY")
 
     client = Anthropic(api_key=api_key)
-
     system = SYSTEM_PROMPT_TEMPLATE.format(rag_context=rag_context)
 
     user_msg = (
         f"Napisz dzisiejszy artykuł blogowy na temat: \"{topic}\".\n\n"
         f"Optymalizuj pod AI Search (ChatGPT, Perplexity, Google AI Mode, Claude) "
-        f"oraz pod tradycyjne SEO. Pamiętaj o lokalnych frazach z Buska-Zdroju."
+        f"oraz pod tradycyjne SEO. Pamiętaj o lokalnych frazach z Buska-Zdroju.\n"
+        f"Zwróć wynik wywołując narzędzie `save_blog_post`."
     )
 
     response = client.messages.create(
         model="claude-opus-4-7",
         max_tokens=8000,
         system=system,
+        tools=[SAVE_POST_TOOL],
+        tool_choice={"type": "tool", "name": "save_blog_post"},
         messages=[{"role": "user", "content": user_msg}],
     )
 
-    raw = response.content[0].text.strip()
-    # Usuń ewentualne fences
-    raw = re.sub(r"^```(?:json)?\s*", "", raw)
-    raw = re.sub(r"\s*```$", "", raw)
+    # Wyciągnij blok tool_use z odpowiedzi
+    for block in response.content:
+        if getattr(block, "type", None) == "tool_use" and block.name == "save_blog_post":
+            return block.input
 
-    return json.loads(raw)
+    # Fallback: stary tryb (gdyby tool_use nie wrócił)
+    text_blocks = [b for b in response.content if getattr(b, "type", None) == "text"]
+    if text_blocks:
+        raw = text_blocks[0].text.strip()
+        raw = re.sub(r"^```(?:json)?\s*", "", raw)
+        raw = re.sub(r"\s*```$", "", raw)
+        return json.loads(raw)
+
+    raise RuntimeError("Claude nie zwrócił ani tool_use, ani text — nieoczekiwana odpowiedź.")
 
 
 # =====================================================================
