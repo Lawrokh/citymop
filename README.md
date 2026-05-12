@@ -220,6 +220,7 @@ Wszystkie generowane przez AI posty:
 ## 📞 Kontakt CityMop
 
 - **Telefon:** +48 530 610 336
+- **www** https://citymop.pl/
 - **E-mail:** info@citymop.pl
 - **Facebook:** [@sprzataniebusko](https://www.facebook.com/sprzataniebusko/)
 - **Adres:** Busko-Zdrój 28-100, woj. świętokrzyskie
