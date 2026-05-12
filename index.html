@@ -40,11 +40,16 @@
 <meta name="twitter:title" content="CityMop Busko-Zdrój — Firma Sprzątająca">
 <meta name="twitter:description" content="Sprzątanie domów, biur, po remoncie i pranie tapicerek w Busku-Zdroju.">
 
-<!-- Favicons -->
+<!-- Favicons + PWA manifest -->
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/favicon.png">
+<link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#14498f">
+<meta name="application-name" content="CityMop">
+<meta name="apple-mobile-web-app-title" content="CityMop">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 
 <!-- Preload key assets (LCP optimization) -->
 <link rel="preload" as="image" href="/assets/logo.png" fetchpriority="high">
@@ -78,9 +83,13 @@
       "alternateName": "CityMop firma sprzątająca",
       "description": "CityMop to firma sprzątająca działająca w Busku-Zdroju i okolicy. Specjalizujemy się w sprzątaniu domów, mieszkań, biur, sprzątaniu po remoncie oraz praniu tapicerek, dywanów i kanap.",
       "url": "https://citymop.pl/",
-      "telephone": "+48537480480",
+      "telephone": "+48530610336",
       "email": "info@citymop.pl",
       "priceRange": "$$",
+      "currenciesAccepted": "PLN",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer, BLIK",
+      "knowsLanguage": ["pl"],
+      "slogan": "Sprzątamy tak, jak sam byś chciał mieć posprzątane",
       "image": "https://citymop.pl/assets/og-image.jpg",
       "logo": "https://citymop.pl/assets/logo.png",
       "address": {
@@ -97,6 +106,16 @@
         "longitude": 20.7225996
       },
       "areaServed": [
+        {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.4732227,
+            "longitude": 20.7225996
+          },
+          "geoRadius": 30000,
+          "description": "30 km od centrum Buska-Zdroju"
+        },
         {"@type": "City", "name": "Busko-Zdrój"},
         {"@type": "City", "name": "Solec-Zdrój"},
         {"@type": "City", "name": "Nowy Korczyn"},
@@ -176,8 +195,54 @@
       "@id": "https://citymop.pl/#website",
       "url": "https://citymop.pl/",
       "name": "CityMop",
-      "publisher": {"@id": "https://citymop.pl/#localbusiness"},
-      "inLanguage": "pl-PL"
+      "publisher": {"@id": "https://citymop.pl/#organization"},
+      "inLanguage": "pl-PL",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://citymop.pl/blog/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://citymop.pl/#organization",
+      "name": "CityMop",
+      "legalName": "CityMop",
+      "url": "https://citymop.pl/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://citymop.pl/assets/logo.png",
+        "width": 540,
+        "height": 290
+      },
+      "image": "https://citymop.pl/assets/og-image.jpg",
+      "telephone": "+48530610336",
+      "email": "info@citymop.pl",
+      "foundingDate": "2017",
+      "areaServed": "Busko-Zdrój i okolice (30 km)",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Busko-Zdrój",
+        "addressLocality": "Busko-Zdrój",
+        "addressRegion": "świętokrzyskie",
+        "postalCode": "28-100",
+        "addressCountry": "PL"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+48530610336",
+        "email": "info@citymop.pl",
+        "contactType": "customer service",
+        "areaServed": "PL",
+        "availableLanguage": ["Polish"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/sprzataniebusko/",
+        "https://www.google.com/maps/place/CityMop+firma+sprz%C4%85taj%C4%85ca/"
+      ]
     },
     {
       "@type": "FAQPage",
@@ -232,6 +297,20 @@
           }
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://citymop.pl/#webpage",
+      "url": "https://citymop.pl/",
+      "name": "CityMop — Firma sprzątająca w Busku-Zdroju",
+      "isPartOf": {"@id": "https://citymop.pl/#website"},
+      "about": {"@id": "https://citymop.pl/#localbusiness"},
+      "primaryImageOfPage": "https://citymop.pl/assets/og-image.jpg",
+      "inLanguage": "pl-PL",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".bluf-answer", ".faq-q", ".faq-a-inner"]
+      }
     },
     {
       "@type": "BreadcrumbList",

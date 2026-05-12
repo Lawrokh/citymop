@@ -1,0 +1,19 @@
+/* TEAM */
+
+Firma: CityMop
+Strona: https://citymop.pl/
+Kontakt: info@citymop.pl
+Lokalizacja: Busko-Zdrój, woj. świętokrzyskie, Polska
+Od: 2017
+
+/* TECHNOLOGIE */
+
+HTML5 · CSS3 · Vanilla JavaScript
+Hosting: GitHub Pages + Cloudflare CDN
+Czcionki: Fraunces, Manrope, JetBrains Mono (Google Fonts)
+Blog automatyczny: Claude API + GitHub Actions cron
+Formularz: Zapier Webhooks
+
+/* PODZIĘKOWANIA */
+
+Dziękujemy klientom z Buska-Zdroju i okolic za zaufanie od 2017 roku.

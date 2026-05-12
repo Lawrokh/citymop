@@ -1,0 +1,50 @@
+# CityMop — firma sprzątająca z Buska-Zdroju
+
+> CityMop to lokalna firma sprzątająca działająca od 2017 roku w Busku-Zdroju i okolicy (30 km). Wykonuje sprzątanie domów, mieszkań, biur, sprzątanie po remoncie oraz pranie tapicerek, dywanów i kanap. Każde zlecenie ubezpieczone do 100 000 zł.
+
+**Kontakt:** +48 530 610 336 · info@citymop.pl
+**Adres:** Busko-Zdrój, 28-100, woj. świętokrzyskie, Polska
+**Godziny pracy:** Pn–Pt 08:00–18:00, Sb 09:00–14:00
+**Strona:** https://citymop.pl/
+
+## Usługi (z cenami orientacyjnymi)
+
+- **Sprzątanie domów i mieszkań** — od 150 zł za mieszkanie 50 m². Regularne lub jednorazowe. Mycie podłóg, odkurzanie, czyszczenie łazienek, kuchni, dezynfekcja powierzchni. Pracujemy także pod nieobecność klienta z kluczem powierniczym.
+- **Sprzątanie biur i firm** — umowy długoterminowe, możliwość pracy poza godzinami biurowymi. Faktura VAT.
+- **Sprzątanie po remoncie** — sprzątanie 60 m² trwa 4–6 godzin. Usuwamy pył budowlany, resztki farby, kleju, fugi. Mycie okien, parapetów, drzwi.
+- **Pranie tapicerek (kanap, sof, foteli, krzeseł)** — pranie kanapy trzyosobowej 60–90 min, schnięcie 4–8 godzin. Metoda ekstrakcyjna. Środki bezpieczne dla alergików, dzieci i zwierząt.
+- **Pranie dywanów i wykładzin** — u klienta lub odbiór. Dywany wełniane i syntetyczne, schody, chodniki, wykładziny biurowe.
+
+## Obszar działania (lokalne SEO)
+
+Busko-Zdrój (główne miasto), Solec-Zdrój, Stopnica, Nowy Korczyn, Wiślica, Pińczów, Chmielnik, Kazimierza Wielka, Pacanów, Tuczępy, Gnojno, Szydłów — wszystkie miejscowości w promieniu 30 km od centrum Buska-Zdroju.
+
+## Główne strony
+
+- [Strona główna](https://citymop.pl/): pełna lista usług, formularz wyceny, FAQ, godziny pracy
+- [Blog](https://citymop.pl/blog/): poradniki o sprzątaniu, czyszczeniu, praniu tapicerek
+- [Sitemap](https://citymop.pl/sitemap.xml): pełna mapa strony
+- [RSS Feed](https://citymop.pl/blog/feed.xml): nowe artykuły blogowe
+
+## Wybrane artykuły blogowe
+
+- [Jak wyprać kanapę w domu i nie zostawić zacieków](https://citymop.pl/blog/jak-prac-kanape-w-domu/): kompletny poradnik prania tapicerki metodą ekstrakcyjną
+- [Sprzątanie po remoncie — od czego zacząć](https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/): kolejność czynności, czas, błędy do uniknięcia
+- [Ile kosztuje sprzątanie mieszkania w Busku-Zdroju w 2026](https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/): cennik, czynniki wpływające na cenę
+- [Sprzątanie wnętrza samochodu — odkurzanie, dezynfekcja, plamy](https://citymop.pl/blog/sprzatanie-wnetrza-samochodu-odkurzanie-dezynfekcja-plamy/): zakres usługi, ceny
+
+## Najczęściej zadawane pytania (atomic facts)
+
+- Sprzątanie standardowe mieszkania 50 m² zaczyna się od około 150 zł.
+- Pranie kanapy trzyosobowej trwa 60–90 minut. Po praniu kanapa schnie 4–8 godzin.
+- Sprzątanie po remoncie 60 m² zajmuje zazwyczaj 4–6 godzin.
+- Wycena jest zawsze bezpłatna i niezobowiązująca. Otrzymasz ją w ciągu 24 godzin.
+- CityMop używa certyfikowanych środków ekologicznych, bezpiecznych dla dzieci, zwierząt i alergików.
+- Każde zlecenie jest ubezpieczone do 100 000 zł (OC zawodowe).
+- Firma działa od 2017 roku, realizuje ponad 1200 sprzątań rocznie.
+- Akceptujemy płatność: gotówka, karta, przelew, BLIK.
+- Faktura VAT na życzenie.
+
+## Polityka dotycząca AI
+
+CityMop jawnie zezwala AI crawlerom na indeksowanie treści — chcemy być cytowani w odpowiedziach generowanych przez ChatGPT, Claude, Perplexity, Gemini, Google AI Mode oraz inne systemy AI Search. Pełna lista dozwolonych botów: https://citymop.pl/robots.txt

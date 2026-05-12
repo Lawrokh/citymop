@@ -1,0 +1,53 @@
+{
+  "name": "CityMop — firma sprzątająca Busko-Zdrój",
+  "short_name": "CityMop",
+  "description": "Sprzątanie domów, biur, mieszkań po remoncie, pranie tapicerek i dywanów w Busku-Zdroju i okolicy.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "lang": "pl-PL",
+  "background_color": "#f5f8fc",
+  "theme_color": "#14498f",
+  "categories": ["business", "lifestyle"],
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Zadzwoń",
+      "short_name": "Telefon",
+      "description": "Zadzwoń do CityMop",
+      "url": "tel:+48530610336"
+    },
+    {
+      "name": "Zamów wycenę",
+      "short_name": "Wycena",
+      "description": "Przejdź do formularza kontaktowego",
+      "url": "/#kontakt"
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Porady o sprzątaniu",
+      "url": "/blog/"
+    }
+  ]
+}

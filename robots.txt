@@ -55,3 +55,6 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://citymop.pl/sitemap.xml
+
+# LLM / AI manifest (https://llmstxt.org/)
+# Zawiera strukturę treści przygotowaną pod AI Search.

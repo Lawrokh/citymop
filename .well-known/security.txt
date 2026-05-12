@@ -1,0 +1,4 @@
+Contact: mailto:info@citymop.pl
+Expires: 2027-12-31T23:59:00.000Z
+Preferred-Languages: pl, en
+Canonical: https://citymop.pl/.well-known/security.txt
