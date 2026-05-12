@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://citymop.pl/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <lastmod>2026-05-12</lastmod>
-  </url>
-  <url>
-    <loc>https://citymop.pl/blog/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-12</lastmod>
-  </url>
-  <url>
-    <loc>https://citymop.pl/blog/jak-prac-kanape-w-domu/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-05-12</lastmod>
-  </url>
-  <url>
-    <loc>https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-05-11</lastmod>
-  </url>
-  <url>
-    <loc>https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-05-10</lastmod>
-  </url>
+<url><loc>https://citymop.pl/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://citymop.pl/blog/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://citymop.pl/blog/sprzatanie-wnetrza-samochodu-odkurzanie-dezynfekcja-plamy/</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://citymop.pl/blog/jak-prac-kanape-w-domu/</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

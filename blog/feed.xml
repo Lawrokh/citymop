@@ -4,32 +4,40 @@
     <title>Blog CityMop — sprzątanie, pranie, porządek</title>
     <link>https://citymop.pl/blog/</link>
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju. Pranie tapicerek, sprzątanie po remoncie, czystość w domu i biurze.</description>
+    <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Tue, 12 May 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 17:12:15 GMT</lastBuildDate>
     <item>
-      <title>Jak wyprać kanapę w domu i nie zostawić zacieków</title>
+      <title>Sprzątanie wnętrza samochodu w Busku-Zdroju — odkurzanie, dezynfekcja, plamy</title>
+      <link>https://citymop.pl/blog/sprzatanie-wnetrza-samochodu-odkurzanie-dezynfekcja-plamy/</link>
+      <guid>https://citymop.pl/blog/sprzatanie-wnetrza-samochodu-odkurzanie-dezynfekcja-plamy/</guid>
+      <description>CityMop sprząta wnętrze auta w Busku-Zdroju w 2-4 godziny: odkurzanie, pranie tapicerki ekstrakcyjnie, dezynfekcja ozonem, usuwanie plam. Zamów: 530 610 336.</description>
+      <category>Pranie tapicerek</category>
+      <pubDate>2026-05-12T19:12:15.978580+02:00</pubDate>
+    </item>
+    <item>
+      <title>Jak wyprać kanapę w domu i nie zostawić zacieków — instrukcja krok po kroku</title>
       <link>https://citymop.pl/blog/jak-prac-kanape-w-domu/</link>
       <guid>https://citymop.pl/blog/jak-prac-kanape-w-domu/</guid>
-      <description>Pranie kanapy w domu jest możliwe, ale wymaga trzech rzeczy, których większość poradników nie mówi. Kompletna instrukcja krok po kroku.</description>
+      <description>Pranie kanapy w domu jest możliwe, ale wymaga trzech rzeczy: właściwego środka, odsysania wody i kontroli wilgotności. Kompletna instrukcja w 6 krokach, z czasem schnięcia i listą błędów.</description>
       <category>Pranie tapicerek</category>
-      <pubDate>Tue, 12 May 2026 08:00:00 +0200</pubDate>
+      <pubDate>2026-05-12T08:00:00+02:00</pubDate>
     </item>
     <item>
       <title>Sprzątanie po remoncie — od czego zacząć, żeby skończyć</title>
       <link>https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/</link>
       <guid>https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/</guid>
-      <description>Pył budowlany osiada przez 14 dni. Dlatego pierwsze sprzątanie po remoncie nigdy nie jest ostatnim. Wyjaśniamy kolejność czynności.</description>
+      <description>Sprzątanie po remoncie wymaga trzech rund — pył osiada przez 14 dni. CityMop tłumaczy kolejność czynności, czas trwania (4–8 h dla 60 m²) i listę narzędzi.</description>
       <category>Po remoncie</category>
-      <pubDate>Mon, 11 May 2026 08:00:00 +0200</pubDate>
+      <pubDate>2026-05-11T08:00:00+02:00</pubDate>
     </item>
     <item>
-      <title>Ile kosztuje sprzątanie mieszkania w Busku-Zdroju w 2026</title>
+      <title>Ile kosztuje sprzątanie mieszkania w Busku-Zdroju w 2026 — realny cennik</title>
       <link>https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/</link>
       <guid>https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/</guid>
-      <description>Ceny zależą od pięciu czynników, nie od jednego. Realne stawki rynkowe i porównanie ofert.</description>
+      <description>Sprzątanie mieszkania 50 m² w Busku-Zdroju kosztuje od 150 zł. CityMop pokazuje pięć czynników wpływających na cenę, realne stawki rynkowe i pełne porównanie.</description>
       <category>Cennik</category>
-      <pubDate>Sun, 10 May 2026 08:00:00 +0200</pubDate>
+      <pubDate>2026-05-10T08:00:00+02:00</pubDate>
     </item>
   </channel>
 </rss>
