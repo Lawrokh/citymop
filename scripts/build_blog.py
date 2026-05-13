@@ -531,6 +531,15 @@ def render_post_html(data: dict, slug: str) -> str:
 <script type="application/ld+json">
 {article_jsonld}
 </script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2JQYJ78NQ3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', 'G-2JQYJ78NQ3', {{ anonymize_ip: true }});
+</script>
 </head>
 <body>
 
