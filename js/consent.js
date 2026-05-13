@@ -42,38 +42,30 @@
     } catch (_) { /* private mode etc. */ }
   };
 
-  // ---- Banner UI ----
+  // ---- Banner UI (kompaktowy popup) ----
   const buildBanner = () => {
     const wrap = document.createElement('div');
-    wrap.className = 'cookie-banner';
+    wrap.className = 'cookie-popup';
     wrap.setAttribute('role', 'dialog');
-    wrap.setAttribute('aria-labelledby', 'cookie-banner-title');
-    wrap.setAttribute('aria-describedby', 'cookie-banner-desc');
+    wrap.setAttribute('aria-labelledby', 'cookie-popup-desc');
     wrap.innerHTML = `
-      <div class="cookie-banner__inner">
-        <div class="cookie-banner__text">
-          <strong id="cookie-banner-title">Używamy plików cookies</strong>
-          <p id="cookie-banner-desc">
-            Niezbędne pliki cookies utrzymują działanie strony, a analityczne (Google Analytics)
-            pomagają nam zrozumieć jak korzystasz z serwisu. Możesz wybrać, co akceptujesz.
-            Więcej w <a href="${COOKIE_POLICY_URL}">Polityce cookies</a>.
-          </p>
-        </div>
-        <div class="cookie-banner__actions">
-          <button type="button" class="btn-cookie btn-cookie--secondary" data-consent="essential">
-            Tylko niezbędne
-          </button>
-          <button type="button" class="btn-cookie btn-cookie--primary" data-consent="all">
-            Akceptuj wszystkie
-          </button>
-        </div>
+      <p id="cookie-popup-desc" class="cookie-popup__text">
+        Używamy cookies do analityki. <a href="${COOKIE_POLICY_URL}">Więcej</a>
+      </p>
+      <div class="cookie-popup__actions">
+        <button type="button" class="btn-cookie btn-cookie--secondary" data-consent="essential" aria-label="Odrzuć cookies analityczne">
+          Odrzuć
+        </button>
+        <button type="button" class="btn-cookie btn-cookie--primary" data-consent="all" aria-label="Akceptuj wszystkie cookies">
+          Akceptuj
+        </button>
       </div>
     `;
     return wrap;
   };
 
   const showBanner = () => {
-    if (document.querySelector('.cookie-banner')) return;
+    if (document.querySelector('.cookie-popup')) return;
     const banner = buildBanner();
     document.body.appendChild(banner);
     requestAnimationFrame(() => banner.classList.add('is-visible'));
@@ -111,7 +103,7 @@
   window.openCookieSettings = function () {
     // Reset zapisu i pokaz baner od nowa.
     try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
-    const existing = document.querySelector('.cookie-banner');
+    const existing = document.querySelector('.cookie-popup');
     if (existing) existing.remove();
     showBanner();
   };
