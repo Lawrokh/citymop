@@ -27,3 +27,10 @@ node_modules/
 
 # Tymczasowe pliki narzędziowe
 .commit_msg.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
