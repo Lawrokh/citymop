@@ -532,11 +532,20 @@ def render_post_html(data: dict, slug: str) -> str:
 {article_jsonld}
 </script>
 
-<!-- Google Analytics 4 -->
+<!-- Google Analytics 4 + Consent Mode v2 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JQYJ78NQ3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
+  gtag('consent', 'default', {{
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'granted',
+    'security_storage': 'granted',
+    'wait_for_update': 500
+  }});
   gtag('js', new Date());
   gtag('config', 'G-2JQYJ78NQ3', {{ anonymize_ip: true }});
 </script>
@@ -628,6 +637,9 @@ def render_post_html(data: dict, slug: str) -> str:
           <li><a href="/#obszar">Obszar</a></li>
           <li><a href="/#faq">FAQ</a></li>
           <li><a href="/#kontakt">Kontakt</a></li>
+          <li><a href="/polityka-prywatnosci/">Polityka prywatności</a></li>
+          <li><a href="/polityka-cookies/">Polityka cookies</a></li>
+          <li><a href="#" onclick="window.openCookieSettings && window.openCookieSettings(); return false;">Ustawienia cookies</a></li>
         </ul>
       </div>
       <div>
@@ -639,11 +651,13 @@ def render_post_html(data: dict, slug: str) -> str:
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">{today.year}</span> CityMop. Wszystkie prawa zastrzeżone.</span>
+      <span>© <span id="year">{today.year}</span> CityMop — Justyna Uboska-Szczepanik. Wszystkie prawa zastrzeżone.</span>
+      <span>NIP 6551956884 · REGON 367313000 · Busko-Zdrój</span>
     </div>
   </div>
 </footer>
 
+<script src="/js/consent.js" defer></script>
 <script src="/js/main.js" defer></script>
 </body>
 </html>
@@ -730,6 +744,8 @@ def generate_sitemap(posts: list[dict]):
     urls = [
         f"<url><loc>{DOMAIN}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>",
         f"<url><loc>{DOMAIN}/blog/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>",
+        f"<url><loc>{DOMAIN}/polityka-prywatnosci/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>",
+        f"<url><loc>{DOMAIN}/polityka-cookies/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>",
     ]
     for p in posts:
         urls.append(
