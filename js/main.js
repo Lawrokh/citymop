@@ -6,6 +6,37 @@
 (function () {
   'use strict';
 
+  // ---- Analytics helper (GA4 — bezpieczne wywolanie) ----
+  // Bezpiecznie wywoluje gtag() jezeli istnieje. Nie wywala strony
+  // gdy GA jest zablokowane (uBlock/Ghostery) lub jeszcze sie nie zaladowalo.
+  const track = (name, params) => {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', name, params || {});
+      }
+    } catch (_) { /* no-op */ }
+  };
+
+  // ---- Tel/email click tracking (delegated, dziala tez na blogu) ----
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (href.startsWith('tel:')) {
+      track('phone_click', {
+        phone_number: href.replace('tel:', ''),
+        link_text: (a.textContent || '').trim().slice(0, 80),
+        page_location: window.location.href
+      });
+    } else if (href.startsWith('mailto:')) {
+      track('email_click', {
+        email_address: href.replace('mailto:', '').split('?')[0],
+        link_text: (a.textContent || '').trim().slice(0, 80),
+        page_location: window.location.href
+      });
+    }
+  }, { passive: true });
+
   // ---- Nav scroll state ----
   const nav = document.querySelector('.nav');
   if (nav) {
@@ -148,6 +179,7 @@
       if (!consent) { showFieldError(form.querySelector('input[name="consent"]'), true); ok = false; }
 
       if (!ok) {
+        track('form_submit_fail', { reason: 'validation', service: service || '(empty)' });
         setStatus('Uzupełnij wymagane pola (imię, telefon, usługa, zgoda).', 'error');
         const firstErr = form.querySelector('.field.has-error input, .field.has-error select');
         if (firstErr) firstErr.focus();
@@ -184,9 +216,19 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
+        // GA4 rekomendowany event "generate_lead" — pojawia sie w
+        // dashbordzie Conversions automatycznie po pierwszym hicie.
+        track('generate_lead', {
+          currency: 'PLN',
+          value: 0,
+          service: service,
+          has_email: !!email,
+          method: 'website_form'
+        });
         setStatus('Dziękujemy! Twoje zapytanie zostało wysłane — oddzwonimy w ciągu 1 dnia roboczego.', 'success');
         form.reset();
       } catch (err) {
+        track('form_submit_fail', { reason: 'network', service: service });
         setStatus('Coś poszło nie tak. Zadzwoń bezpośrednio: +48 530 610 336.', 'error');
       } finally {
         submitBtn.classList.remove('is-loading');
