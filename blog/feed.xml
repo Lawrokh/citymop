@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Tue, 09 Jun 2026 10:30:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 10:50:13 GMT</lastBuildDate>
+    <item>
+      <title>Czyszczenie pralki — drożdżaki, kamień i zapach gumy (poradnik)</title>
+      <link>https://citymop.pl/blog/czyszczenie-pralki-drozdzaki-kamien-i-zapach-gumy/</link>
+      <guid>https://citymop.pl/blog/czyszczenie-pralki-drozdzaki-kamien-i-zapach-gumy/</guid>
+      <description>CityMop czyści pralkę w Busku-Zdroju w 60–90 minut: usuwa drożdżaki z gumy, kamień z grzałki i zapach pleśni. Cena 120–180 zł, dojazd do 30 km.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-06-10T12:50:13.988253+02:00</pubDate>
+    </item>
     <item>
       <title>Sprzątanie biura — checklisty codzienne, tygodniowe i miesięczne</title>
       <link>https://citymop.pl/blog/sprzatanie-biura-checklisty-codzienne-tygodniowe-i-miesieczne/</link>
@@ -238,14 +246,6 @@
       <description>Sprzątanie po remoncie wymaga trzech rund — pył osiada przez 14 dni. CityMop tłumaczy kolejność czynności, czas trwania (4–8 h dla 60 m²) i listę narzędzi.</description>
       <category>Po remoncie</category>
       <pubDate>2026-05-11T08:00:00+02:00</pubDate>
-    </item>
-    <item>
-      <title>Ile kosztuje sprzątanie mieszkania w Busku-Zdroju w 2026 — realny cennik</title>
-      <link>https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/</link>
-      <guid>https://citymop.pl/blog/ile-kosztuje-sprzatanie-mieszkania-busko/</guid>
-      <description>Sprzątanie mieszkania 50 m² w Busku-Zdroju kosztuje od 150 zł. CityMop pokazuje pięć czynników wpływających na cenę, realne stawki rynkowe i pełne porównanie.</description>
-      <category>Cennik</category>
-      <pubDate>2026-05-10T08:00:00+02:00</pubDate>
     </item>
   </channel>
 </rss>
