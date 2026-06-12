@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Wed, 10 Jun 2026 10:50:13 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 10:58:06 GMT</lastBuildDate>
+    <item>
+      <title>Czyszczenie okapu kuchennego i filtrów – instrukcja CityMop Busko-Zdrój</title>
+      <link>https://citymop.pl/blog/czyszczenie-okapu-kuchennego-i-filtrow/</link>
+      <guid>https://citymop.pl/blog/czyszczenie-okapu-kuchennego-i-filtrow/</guid>
+      <description>CityMop czyści okap kuchenny i filtry przeciwtłuszczowe w 45–90 minut w Busku-Zdroju i 30 km od centrum. Sprawdź metodę, koszt od 80 zł i częstotliwość mycia.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-06-12T12:58:06.732221+02:00</pubDate>
+    </item>
     <item>
       <title>Czyszczenie pralki — drożdżaki, kamień i zapach gumy (poradnik)</title>
       <link>https://citymop.pl/blog/czyszczenie-pralki-drozdzaki-kamien-i-zapach-gumy/</link>
@@ -238,14 +246,6 @@
       <description>Pranie kanapy w domu jest możliwe, ale wymaga trzech rzeczy: właściwego środka, odsysania wody i kontroli wilgotności. Kompletna instrukcja w 6 krokach, z czasem schnięcia i listą błędów.</description>
       <category>Pranie tapicerek</category>
       <pubDate>2026-05-12T08:00:00+02:00</pubDate>
-    </item>
-    <item>
-      <title>Sprzątanie po remoncie — od czego zacząć, żeby skończyć</title>
-      <link>https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/</link>
-      <guid>https://citymop.pl/blog/sprzatanie-po-remoncie-od-czego-zaczac/</guid>
-      <description>Sprzątanie po remoncie wymaga trzech rund — pył osiada przez 14 dni. CityMop tłumaczy kolejność czynności, czas trwania (4–8 h dla 60 m²) i listę narzędzi.</description>
-      <category>Po remoncie</category>
-      <pubDate>2026-05-11T08:00:00+02:00</pubDate>
     </item>
   </channel>
 </rss>
