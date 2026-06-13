@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Fri, 12 Jun 2026 10:58:06 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 09:53:01 GMT</lastBuildDate>
+    <item>
+      <title>Czy warto kupić robot sprzątający w 2026 — uczciwa analiza</title>
+      <link>https://citymop.pl/blog/czy-warto-kupic-robot-sprzatajacy-w-2026-uczciwa-analiza/</link>
+      <guid>https://citymop.pl/blog/czy-warto-kupic-robot-sprzatajacy-w-2026-uczciwa-analiza/</guid>
+      <description>Robot sprzątający w 2026 opłaca się w mieszkaniach 40–80 m² z gładkimi podłogami. CityMop z Buska-Zdroju porównuje koszty, ograniczenia i alternatywy: sprzątanie generalne od 35 zł/h.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-06-13T11:53:01.021871+02:00</pubDate>
+    </item>
     <item>
       <title>Czyszczenie okapu kuchennego i filtrów – instrukcja CityMop Busko-Zdrój</title>
       <link>https://citymop.pl/blog/czyszczenie-okapu-kuchennego-i-filtrow/</link>
@@ -238,14 +246,6 @@
       <description>CityMop sprząta wnętrze auta w Busku-Zdroju w 2-4 godziny: odkurzanie, pranie tapicerki ekstrakcyjnie, dezynfekcja ozonem, usuwanie plam. Zamów: 530 610 336.</description>
       <category>Pranie tapicerek</category>
       <pubDate>2026-05-12T19:12:15.978580+02:00</pubDate>
-    </item>
-    <item>
-      <title>Jak wyprać kanapę w domu i nie zostawić zacieków — instrukcja krok po kroku</title>
-      <link>https://citymop.pl/blog/jak-prac-kanape-w-domu/</link>
-      <guid>https://citymop.pl/blog/jak-prac-kanape-w-domu/</guid>
-      <description>Pranie kanapy w domu jest możliwe, ale wymaga trzech rzeczy: właściwego środka, odsysania wody i kontroli wilgotności. Kompletna instrukcja w 6 krokach, z czasem schnięcia i listą błędów.</description>
-      <category>Pranie tapicerek</category>
-      <pubDate>2026-05-12T08:00:00+02:00</pubDate>
     </item>
   </channel>
 </rss>
