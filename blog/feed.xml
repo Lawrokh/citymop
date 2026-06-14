@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Sat, 13 Jun 2026 09:53:01 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 10:20:58 GMT</lastBuildDate>
+    <item>
+      <title>Sprzątanie kawalerki — checklista 60-minutowa (Busko-Zdrój)</title>
+      <link>https://citymop.pl/blog/sprzatanie-kawalerki-checklista-60-minutowa/</link>
+      <guid>https://citymop.pl/blog/sprzatanie-kawalerki-checklista-60-minutowa/</guid>
+      <description>CityMop sprząta kawalerkę 25–35 m² w 60 minut: 6 stref, 12 zadań, koszt 120–180 zł w Busku-Zdroju. Checklista krok po kroku, środki, czas na każdy etap.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-06-14T12:20:58.513008+02:00</pubDate>
+    </item>
     <item>
       <title>Czy warto kupić robot sprzątający w 2026 — uczciwa analiza</title>
       <link>https://citymop.pl/blog/czy-warto-kupic-robot-sprzatajacy-w-2026-uczciwa-analiza/</link>
@@ -238,14 +246,6 @@
       <description>CityMop pierze poduszki z piór w 40°C i poliestrowe w 60°C. Cykl 90–120 min, suszenie 3–6 h, cena 25–45 zł/szt. Busko-Zdrój i 30 km.</description>
       <category>Pranie tapicerek</category>
       <pubDate>2026-05-13T01:18:05.579170+02:00</pubDate>
-    </item>
-    <item>
-      <title>Sprzątanie wnętrza samochodu w Busku-Zdroju — odkurzanie, dezynfekcja, plamy</title>
-      <link>https://citymop.pl/blog/sprzatanie-wnetrza-samochodu-odkurzanie-dezynfekcja-plamy/</link>
-      <guid>https://citymop.pl/blog/sprzatanie-wnetrza-samochodu-odkurzanie-dezynfekcja-plamy/</guid>
-      <description>CityMop sprząta wnętrze auta w Busku-Zdroju w 2-4 godziny: odkurzanie, pranie tapicerki ekstrakcyjnie, dezynfekcja ozonem, usuwanie plam. Zamów: 530 610 336.</description>
-      <category>Pranie tapicerek</category>
-      <pubDate>2026-05-12T19:12:15.978580+02:00</pubDate>
     </item>
   </channel>
 </rss>
