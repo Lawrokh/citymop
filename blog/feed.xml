@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Sun, 14 Jun 2026 10:20:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 12:59:50 GMT</lastBuildDate>
+    <item>
+      <title>Sprzątanie tarasu i balkonu — sezon wiosenny i jesienny w Busku-Zdroju</title>
+      <link>https://citymop.pl/blog/sprzatanie-tarasu-i-balkonu-sezon-wiosenny-i-jesienny/</link>
+      <guid>https://citymop.pl/blog/sprzatanie-tarasu-i-balkonu-sezon-wiosenny-i-jesienny/</guid>
+      <description>CityMop sprząta tarasy i balkony w Busku-Zdroju wiosną i jesienią w 2-4 godziny od 180 zł. Mycie płytek, balustrad, mebli ogrodowych. Dojazd 30 km. Tel. 530 610 336.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-06-15T14:59:50.928088+02:00</pubDate>
+    </item>
     <item>
       <title>Sprzątanie kawalerki — checklista 60-minutowa (Busko-Zdrój)</title>
       <link>https://citymop.pl/blog/sprzatanie-kawalerki-checklista-60-minutowa/</link>
@@ -238,14 +246,6 @@
       <description>Pranie materaca CityMop trwa 60–120 min i kosztuje 120–250 zł w Busku-Zdroju. Sprawdź, kiedy wystarczy odkurzanie, a kiedy konieczne jest pranie ekstrakcyjne.</description>
       <category>Pranie tapicerek</category>
       <pubDate>2026-05-13T11:37:23.299414+02:00</pubDate>
-    </item>
-    <item>
-      <title>Pranie poduszek z piór i poliestru — różnice metod</title>
-      <link>https://citymop.pl/blog/pranie-poduszek-z-pior-i-poliestru-roznice-metod/</link>
-      <guid>https://citymop.pl/blog/pranie-poduszek-z-pior-i-poliestru-roznice-metod/</guid>
-      <description>CityMop pierze poduszki z piór w 40°C i poliestrowe w 60°C. Cykl 90–120 min, suszenie 3–6 h, cena 25–45 zł/szt. Busko-Zdrój i 30 km.</description>
-      <category>Pranie tapicerek</category>
-      <pubDate>2026-05-13T01:18:05.579170+02:00</pubDate>
     </item>
   </channel>
 </rss>
