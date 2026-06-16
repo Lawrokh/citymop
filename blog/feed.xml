@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Mon, 15 Jun 2026 12:59:50 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 12:05:51 GMT</lastBuildDate>
+    <item>
+      <title>Czyszczenie biurka i krzesła biurowego — porady dla home office</title>
+      <link>https://citymop.pl/blog/czyszczenie-biurka-i-krzesla-biurowego-porady-dla-home-office/</link>
+      <guid>https://citymop.pl/blog/czyszczenie-biurka-i-krzesla-biurowego-porady-dla-home-office/</guid>
+      <description>CityMop czyści biurko i krzesło biurowe w 45–75 minut. Pranie ekstrakcyjne fotela, dezynfekcja blatu, koszt od 80 zł. Busko-Zdrój i 30 km wokół.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-06-16T14:05:51.173382+02:00</pubDate>
+    </item>
     <item>
       <title>Sprzątanie tarasu i balkonu — sezon wiosenny i jesienny w Busku-Zdroju</title>
       <link>https://citymop.pl/blog/sprzatanie-tarasu-i-balkonu-sezon-wiosenny-i-jesienny/</link>
@@ -238,14 +246,6 @@
       <description>CityMop czyści kominek i wkład kominkowy w Busku-Zdroju w 2–4 godziny od 250 zł. Usuwamy sadzę, smołę i naloty ze szyby. Dojazd 30 km. Tel. 530 610 336.</description>
       <category>Sprzątanie domów</category>
       <pubDate>2026-05-14T11:28:58.829221+02:00</pubDate>
-    </item>
-    <item>
-      <title>Pranie materaca — kiedy konieczne, a kiedy wystarczy odkurzanie?</title>
-      <link>https://citymop.pl/blog/pranie-materaca-kiedy-konieczne-kiedy-wystarczy-odkurzanie/</link>
-      <guid>https://citymop.pl/blog/pranie-materaca-kiedy-konieczne-kiedy-wystarczy-odkurzanie/</guid>
-      <description>Pranie materaca CityMop trwa 60–120 min i kosztuje 120–250 zł w Busku-Zdroju. Sprawdź, kiedy wystarczy odkurzanie, a kiedy konieczne jest pranie ekstrakcyjne.</description>
-      <category>Pranie tapicerek</category>
-      <pubDate>2026-05-13T11:37:23.299414+02:00</pubDate>
     </item>
   </channel>
 </rss>
