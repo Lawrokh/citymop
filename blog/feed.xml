@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Tue, 16 Jun 2026 12:05:51 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 11:29:44 GMT</lastBuildDate>
+    <item>
+      <title>Jak prać firany i zasłony — temperatura, środki, suszenie (poradnik)</title>
+      <link>https://citymop.pl/blog/jak-prac-firany-i-zaslony-temperatura-srodki-suszenie/</link>
+      <guid>https://citymop.pl/blog/jak-prac-firany-i-zaslony-temperatura-srodki-suszenie/</guid>
+      <description>Firany pierz w 30–40°C, zasłony bawełniane w 40–60°C. CityMop z Buska-Zdroju radzi: środki, suszenie bez prasowania, namaczanie 30 min. Tel. 530 610 336.</description>
+      <category>Pranie tapicerek</category>
+      <pubDate>2026-06-17T13:29:44.913499+02:00</pubDate>
+    </item>
     <item>
       <title>Czyszczenie biurka i krzesła biurowego — porady dla home office</title>
       <link>https://citymop.pl/blog/czyszczenie-biurka-i-krzesla-biurowego-porady-dla-home-office/</link>
@@ -238,14 +246,6 @@
       <description>CityMop sprząta łazienkę po remoncie w Busku-Zdroju w 3-5 godzin. Poznaj kolejność czynności: od pyłu z sufitu po fugi i armaturę. Zadzwoń: 530 610 336.</description>
       <category>Sprzątanie po remoncie</category>
       <pubDate>2026-05-15T11:40:52.232969+02:00</pubDate>
-    </item>
-    <item>
-      <title>Czyszczenie kominka i wkładu kominkowego – Busko-Zdrój</title>
-      <link>https://citymop.pl/blog/czyszczenie-kominka-i-wkladu-kominkowego/</link>
-      <guid>https://citymop.pl/blog/czyszczenie-kominka-i-wkladu-kominkowego/</guid>
-      <description>CityMop czyści kominek i wkład kominkowy w Busku-Zdroju w 2–4 godziny od 250 zł. Usuwamy sadzę, smołę i naloty ze szyby. Dojazd 30 km. Tel. 530 610 336.</description>
-      <category>Sprzątanie domów</category>
-      <pubDate>2026-05-14T11:28:58.829221+02:00</pubDate>
     </item>
   </channel>
 </rss>
