@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Wed, 17 Jun 2026 11:29:44 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 11:06:44 GMT</lastBuildDate>
+    <item>
+      <title>Czym pachnie czysty dom — chemia zapachów porządku</title>
+      <link>https://citymop.pl/blog/czym-pachnie-czysty-dom-chemia-zapachow-porzadku/</link>
+      <guid>https://citymop.pl/blog/czym-pachnie-czysty-dom-chemia-zapachow-porzadku/</guid>
+      <description>Czysty dom pachnie neutralnie: brak amoniaku, siarkowodoru i VOC. CityMop w Busku-Zdroju usuwa źródła zapachów ozonem, parą 150°C i enzymami w 2–4 h.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-06-18T13:06:44.668813+02:00</pubDate>
+    </item>
     <item>
       <title>Jak prać firany i zasłony — temperatura, środki, suszenie (poradnik)</title>
       <link>https://citymop.pl/blog/jak-prac-firany-i-zaslony-temperatura-srodki-suszenie/</link>
@@ -238,14 +246,6 @@
       <description>Czyść lodówkę raz w miesiącu w 45 minut: ocet 1:1, soda, kontrola uszczelek. CityMop z Buska-Zdroju doradza i sprząta kuchnie w 30 km od centrum.</description>
       <category>Sprzątanie domów</category>
       <pubDate>2026-05-16T10:46:33.886167+02:00</pubDate>
-    </item>
-    <item>
-      <title>Sprzątanie po remoncie łazienki – kolejność czynności krok po kroku</title>
-      <link>https://citymop.pl/blog/sprzatanie-po-remoncie-lazienki-kolejnosc-czynnosci-krok-po-kroku/</link>
-      <guid>https://citymop.pl/blog/sprzatanie-po-remoncie-lazienki-kolejnosc-czynnosci-krok-po-kroku/</guid>
-      <description>CityMop sprząta łazienkę po remoncie w Busku-Zdroju w 3-5 godzin. Poznaj kolejność czynności: od pyłu z sufitu po fugi i armaturę. Zadzwoń: 530 610 336.</description>
-      <category>Sprzątanie po remoncie</category>
-      <pubDate>2026-05-15T11:40:52.232969+02:00</pubDate>
     </item>
   </channel>
 </rss>
