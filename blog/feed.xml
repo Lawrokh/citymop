@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Thu, 18 Jun 2026 11:06:44 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 12:45:04 GMT</lastBuildDate>
+    <item>
+      <title>Pranie dywanu wełnianego — kiedy w domu, a kiedy oddać firmie</title>
+      <link>https://citymop.pl/blog/pranie-dywanu-welnianego-kiedy-w-domu-a-kiedy-oddac-firmie/</link>
+      <guid>https://citymop.pl/blog/pranie-dywanu-welnianego-kiedy-w-domu-a-kiedy-oddac-firmie/</guid>
+      <description>Pranie dywanu wełnianego w domu wykonasz przy plamach do 20 cm i lekkim zabrudzeniu. CityMop pierze wełnę w Busku-Zdroju ekstrakcją od 18 zł/m².</description>
+      <category>Pranie dywanów</category>
+      <pubDate>2026-06-22T14:45:04.624275+02:00</pubDate>
+    </item>
     <item>
       <title>Czym pachnie czysty dom — chemia zapachów porządku</title>
       <link>https://citymop.pl/blog/czym-pachnie-czysty-dom-chemia-zapachow-porzadku/</link>
@@ -238,14 +246,6 @@
       <description>Mycie okien bez smug wymaga ściągaczki gumowej, wody 20°C i pracy w cieniu. CityMop z Buska-Zdroju wskazuje 6 błędów, przez które smugi wracają po 24 h.</description>
       <category>Sprzątanie domów</category>
       <pubDate>2026-05-17T10:59:39.499513+02:00</pubDate>
-    </item>
-    <item>
-      <title>Jak czyścić lodówkę raz w miesiącu, żeby nigdy nie śmierdziała</title>
-      <link>https://citymop.pl/blog/jak-czyscic-lodowke-raz-w-miesiacu-zeby-nigdy-nie-smierdziala/</link>
-      <guid>https://citymop.pl/blog/jak-czyscic-lodowke-raz-w-miesiacu-zeby-nigdy-nie-smierdziala/</guid>
-      <description>Czyść lodówkę raz w miesiącu w 45 minut: ocet 1:1, soda, kontrola uszczelek. CityMop z Buska-Zdroju doradza i sprząta kuchnie w 30 km od centrum.</description>
-      <category>Sprzątanie domów</category>
-      <pubDate>2026-05-16T10:46:33.886167+02:00</pubDate>
     </item>
   </channel>
 </rss>
