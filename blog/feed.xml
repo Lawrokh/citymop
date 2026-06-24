@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Mon, 22 Jun 2026 12:45:04 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 10:15:19 GMT</lastBuildDate>
+    <item>
+      <title>Czyszczenie fug w łazience — domowe metody, które działają</title>
+      <link>https://citymop.pl/blog/czyszczenie-fug-w-lazience-domowe-metody-ktore-dzialaja/</link>
+      <guid>https://citymop.pl/blog/czyszczenie-fug-w-lazience-domowe-metody-ktore-dzialaja/</guid>
+      <description>Czyszczenie fug w łazience: soda + ocet usuwa 80% zabrudzeń w 15 minut. Sprawdź 5 domowych metod, kolejność kroków i kiedy zamówić CityMop w Busku-Zdroju.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-06-24T12:15:19.906866+02:00</pubDate>
+    </item>
     <item>
       <title>Pranie dywanu wełnianego — kiedy w domu, a kiedy oddać firmie</title>
       <link>https://citymop.pl/blog/pranie-dywanu-welnianego-kiedy-w-domu-a-kiedy-oddac-firmie/</link>
@@ -238,14 +246,6 @@
       <description>CityMop czyści żaluzje i rolety bez demontażu w 20–45 min za pomocą mikrofibry, pary 110°C i odkurzacza z miękką szczotką. Busko-Zdrój i 30 km wokół.</description>
       <category>Sprzątanie domów</category>
       <pubDate>2026-05-18T13:00:21.582187+02:00</pubDate>
-    </item>
-    <item>
-      <title>Jak myć okna bez smug — 6 błędów, które popełniają wszyscy</title>
-      <link>https://citymop.pl/blog/jak-myc-okna-bez-smug-szesc-bledow-ktore-wszyscy-popelniaja/</link>
-      <guid>https://citymop.pl/blog/jak-myc-okna-bez-smug-szesc-bledow-ktore-wszyscy-popelniaja/</guid>
-      <description>Mycie okien bez smug wymaga ściągaczki gumowej, wody 20°C i pracy w cieniu. CityMop z Buska-Zdroju wskazuje 6 błędów, przez które smugi wracają po 24 h.</description>
-      <category>Sprzątanie domów</category>
-      <pubDate>2026-05-17T10:59:39.499513+02:00</pubDate>
     </item>
   </channel>
 </rss>
