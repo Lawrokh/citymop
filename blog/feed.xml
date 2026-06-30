@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Wed, 24 Jun 2026 10:15:19 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 10:26:46 GMT</lastBuildDate>
+    <item>
+      <title>Pranie zasłon prysznicowych z PCV i z tkaniny – Busko-Zdrój</title>
+      <link>https://citymop.pl/blog/pranie-zaslon-prysznicowych-z-pcv-i-z-tkaniny/</link>
+      <guid>https://citymop.pl/blog/pranie-zaslon-prysznicowych-z-pcv-i-z-tkaniny/</guid>
+      <description>CityMop pierze zasłony prysznicowe z PCV w 30°C z sodą i octem, a tekstylne w 40°C z dodatkiem boraksu. Usuwa pleśń i kamień w 60–90 minut. Busko-Zdrój i 30 km.</description>
+      <category>Pranie tapicerek</category>
+      <pubDate>2026-06-30T12:26:46.791392+02:00</pubDate>
+    </item>
     <item>
       <title>Czyszczenie fug w łazience — domowe metody, które działają</title>
       <link>https://citymop.pl/blog/czyszczenie-fug-w-lazience-domowe-metody-ktore-dzialaja/</link>
@@ -238,14 +246,6 @@
       <description>CityMop sprząta po kotach i psach w Busku-Zdroju i 30 km wokół: pranie kanapy 60–120 min, dywanu 8–12 zł/m². Usuwamy sierść, mocz, zapach. Tel. 530 610 336.</description>
       <category>Sprzątanie domów</category>
       <pubDate>2026-05-19T12:35:10.382186+02:00</pubDate>
-    </item>
-    <item>
-      <title>Czyszczenie żaluzji i rolet bez demontażu — szybkie metody</title>
-      <link>https://citymop.pl/blog/czyszczenie-zaluzji-i-rolet-szybkie-metody-bez-demontazu/</link>
-      <guid>https://citymop.pl/blog/czyszczenie-zaluzji-i-rolet-szybkie-metody-bez-demontazu/</guid>
-      <description>CityMop czyści żaluzje i rolety bez demontażu w 20–45 min za pomocą mikrofibry, pary 110°C i odkurzacza z miękką szczotką. Busko-Zdrój i 30 km wokół.</description>
-      <category>Sprzątanie domów</category>
-      <pubDate>2026-05-18T13:00:21.582187+02:00</pubDate>
     </item>
   </channel>
 </rss>
