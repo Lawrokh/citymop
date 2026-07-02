@@ -6,7 +6,15 @@
     <atom:link href="https://citymop.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Codzienne porady firmy sprzątającej CityMop z Buska-Zdroju.</description>
     <language>pl-pl</language>
-    <lastBuildDate>Wed, 01 Jul 2026 10:38:45 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 09:54:14 GMT</lastBuildDate>
+    <item>
+      <title>Generalne sprzątanie mieszkania w weekend – plan CityMop Busko-Zdrój</title>
+      <link>https://citymop.pl/blog/jak-zorganizowac-generalne-sprzatanie-mieszkania-w-jeden-weekend/</link>
+      <guid>https://citymop.pl/blog/jak-zorganizowac-generalne-sprzatanie-mieszkania-w-jeden-weekend/</guid>
+      <description>Generalne sprzątanie mieszkania 60 m² zajmuje 12–16 godzin w weekend. CityMop z Buska-Zdroju dzieli pracę na 6 stref, używa pary 150°C i pierze tapicerki.</description>
+      <category>Sprzątanie domów</category>
+      <pubDate>2026-07-02T11:54:14.506930+02:00</pubDate>
+    </item>
     <item>
       <title>Czyszczenie ekspresu do kawy — codzienne, tygodniowe, miesięczne</title>
       <link>https://citymop.pl/blog/czyszczenie-ekspresu-do-kawy-codzienne-tygodniowe-miesieczne/</link>
@@ -238,14 +246,6 @@
       <description>CityMop usuwa plamy z dywanu w Busku-Zdroju w 60–120 min. Sprawdź metody na kawę, wino, krew, tłuszcz, mocz i długopis. Cennik od 12 zł/m². Tel. 530 610 336.</description>
       <category>Pranie dywanów i wykładzin</category>
       <pubDate>2026-05-21T12:34:11.085445+02:00</pubDate>
-    </item>
-    <item>
-      <title>Jak czyścić indukcję, żeby nie zarysować szkła – instrukcja CityMop</title>
-      <link>https://citymop.pl/blog/jak-czyscic-indukcje-zeby-nie-zarysowac-szkla/</link>
-      <guid>https://citymop.pl/blog/jak-czyscic-indukcje-zeby-nie-zarysowac-szkla/</guid>
-      <description>Czyść indukcję mlekiem do ceramiki (Cerama, Cillit Bang Ceramic) i skrobakiem 45°. CityMop z Buska-Zdroju usuwa przypalenia w 15-25 min bez rys. Tel. 530 610 336.</description>
-      <category>Sprzątanie domów</category>
-      <pubDate>2026-05-20T12:21:18.957527+02:00</pubDate>
     </item>
   </channel>
 </rss>
