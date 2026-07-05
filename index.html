@@ -94,12 +94,13 @@
       "logo": "https://citymop.pl/assets/logo.png",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Busko-Zdrój",
+        "streetAddress": "Królowej Jadwigi 49",
         "addressLocality": "Busko-Zdrój",
         "addressRegion": "świętokrzyskie",
         "postalCode": "28-100",
         "addressCountry": "PL"
       },
+      "founder": {"@id": "https://citymop.pl/#founder"},
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 50.4732227,
@@ -141,7 +142,10 @@
       ],
       "sameAs": [
         "https://www.facebook.com/sprzataniebusko/",
-        "https://www.google.com/maps/place/CityMop+firma+sprz%C4%85taj%C4%85ca/"
+        "https://www.google.com/maps/place/CityMop+firma+sprz%C4%85taj%C4%85ca/",
+        "https://panoramafirm.pl/%C5%9Bwi%C4%99tokrzyskie,buski,busko_zdr%C3%B3j,partyzant%C3%B3w,19/citymop_firma_sprzatajaca-zwzpub_mko.html",
+        "https://www.oferteo.pl/citymop-firma-sprzatajaca/firma/3183952",
+        "https://busko.com.pl/firma-sprzatajaca-citymop-busko-zdroj,176,4207,o.html"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -222,10 +226,11 @@
       "telephone": "+48530610336",
       "email": "info@citymop.pl",
       "foundingDate": "2017",
+      "founder": {"@id": "https://citymop.pl/#founder"},
       "areaServed": "Busko-Zdrój i okolice (30 km)",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Busko-Zdrój",
+        "streetAddress": "Królowej Jadwigi 49",
         "addressLocality": "Busko-Zdrój",
         "addressRegion": "świętokrzyskie",
         "postalCode": "28-100",
@@ -241,8 +246,27 @@
       },
       "sameAs": [
         "https://www.facebook.com/sprzataniebusko/",
-        "https://www.google.com/maps/place/CityMop+firma+sprz%C4%85taj%C4%85ca/"
+        "https://www.google.com/maps/place/CityMop+firma+sprz%C4%85taj%C4%85ca/",
+        "https://panoramafirm.pl/%C5%9Bwi%C4%99tokrzyskie,buski,busko_zdr%C3%B3j,partyzant%C3%B3w,19/citymop_firma_sprzatajaca-zwzpub_mko.html",
+        "https://www.oferteo.pl/citymop-firma-sprzatajaca/firma/3183952",
+        "https://busko.com.pl/firma-sprzatajaca-citymop-busko-zdroj,176,4207,o.html"
       ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://citymop.pl/#founder",
+      "name": "Justyna Uboska-Szczepanik",
+      "jobTitle": "Założycielka i właścicielka CityMop",
+      "image": "https://citymop.pl/images/justyna-uboska-szczepanik.jpg",
+      "worksFor": {"@id": "https://citymop.pl/#organization"},
+      "knowsAbout": [
+        "sprzątanie domów i mieszkań",
+        "sprzątanie biur",
+        "sprzątanie po remoncie",
+        "pranie tapicerki metodą ekstrakcyjną",
+        "pranie dywanów i wykładzin"
+      ],
+      "url": "https://citymop.pl/#o-nas"
     },
     {
       "@type": "FAQPage",
@@ -442,16 +466,36 @@
     </div>
     <div>
       <p class="bluf-answer">
-        <strong>CityMop</strong> to <strong>firma sprzątająca z Buska-Zdroju</strong>, która od 2017 roku
-        wykonuje sprzątanie domów, biur, mieszkań po remoncie oraz pranie tapicerek, dywanów i kanap
-        w Busku-Zdroju i miejscowościach w promieniu 30 km. Działamy w pełni ubezpieczonym zespołem,
-        stosujemy ekologiczne środki i dajemy gwarancję czystości.
+        <strong>CityMop</strong> to <strong>firma sprzątająca z Buska-Zdroju</strong> (ul. Królowej
+        Jadwigi 49), która od 2017 roku realizuje ponad 1200 sprzątań rocznie: sprzątanie domów, biur,
+        mieszkań po remoncie oraz pranie tapicerek, dywanów i kanap w Busku-Zdroju i miejscowościach
+        w promieniu 30 km. Sprzątanie mieszkania 50 m² kosztuje od 150 zł, a każde zlecenie jest
+        ubezpieczone do 500 000 zł. Stosujemy ekologiczne środki i dajemy gwarancję czystości.
       </p>
       <ul class="bluf-facts">
         <li>Wycena bezpłatna w 24 godziny – zadzwoń <strong>+48 530 610 336</strong> lub wypełnij formularz</li>
         <li>Obsługujemy klientów prywatnych i firmowych w 8 powiatach świętokrzyskiego</li>
-        <li>Każde zlecenie ubezpieczone do 100 000 zł</li>
+        <li>Każde zlecenie ubezpieczone do 500 000 zł (OC zawodowe)</li>
       </ul>
+    </div>
+  </div>
+
+  <div class="container" id="o-nas" style="margin-top: 3.5rem;">
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; max-width: 56rem;">
+      <img src="/images/justyna-uboska-szczepanik.jpg"
+           alt="Justyna Uboska-Szczepanik, założycielka i właścicielka firmy sprzątającej CityMop z Buska-Zdroju"
+           width="150" height="200" loading="lazy"
+           style="border-radius: 12px; flex-shrink: 0;">
+      <div style="flex: 1; min-width: 260px;">
+        <span class="eyebrow">Kto za tym stoi</span>
+        <h3 style="margin: 0.5rem 0 0.75rem;">Justyna Uboska-Szczepanik — założycielka CityMop</h3>
+        <p>
+          CityMop założyła w 2017 roku <strong>Justyna Uboska-Szczepanik</strong>, która do dziś osobiście
+          nadzoruje jakość każdego zlecenia. Przez 8 lat zbudowała zespół wykonujący ponad 1200 sprzątań
+          rocznie w Busku-Zdroju i okolicy — od mieszkań prywatnych po biura i obiekty firmowe.
+          To do niej trafia każda wycena i każda uwaga klienta.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -565,7 +609,7 @@
         <span class="l">Sprzątań rocznie. Każde wykonane przez stały, zweryfikowany zespół.</span>
       </div>
       <div class="trust-stat">
-        <span class="n">100 <em>tys.</em></span>
+        <span class="n">500 <em>tys.</em></span>
         <span class="l">złotych — taka jest suma OC zawodowej, którą obejmujemy każde zlecenie.</span>
       </div>
       <div class="trust-stat">
@@ -1000,7 +1044,7 @@
           <li><a href="tel:+48530610336">+48 530 610 336</a></li>
           <li><a href="mailto:info@citymop.pl">info@citymop.pl</a></li>
           <li><a href="https://www.facebook.com/sprzataniebusko/">Facebook</a></li>
-          <li>Busko-Zdrój, 28-100</li>
+          <li>ul. Królowej Jadwigi 49, 28-100 Busko-Zdrój</li>
         </ul>
       </div>
     </div>
